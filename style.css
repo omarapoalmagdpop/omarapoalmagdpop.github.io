@@ -1,0 +1,158 @@
+/* Basic Reset so everything looks the same on all browsers */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #00509e; /* University blue color */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Navigation bar styling using inline-block */
+nav ul {
+    list-style-type: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Makes the list items sit side-by-side */
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* Removes the underline from links */
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #003f7a;
+    border-radius: 5px;
+}
+
+/* Main content area box */
+main {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto; /* Centers the main block on the page */
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Adds a tiny drop shadow */
+}
+
+section h2 {
+    color: #00509e;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* -----------------------------
+   TABLE STYLES
+------------------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Merges the double borders into single borders */
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #aaaaaa;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e2e2e2;
+    color: #333333;
+}
+
+/* Pseudo-class to make the table alternating colors (Zebra stripes!) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef5fb; /* Very light blue hover effect */
+}
+
+/* -----------------------------
+   FORM STYLES
+------------------------------ */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Puts the label on its own line above the input */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't make the width exceed 100% */
+}
+
+input[type="submit"] {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003f7a; /* Darker blue when hovering over the button */
+}
+
+/* -----------------------------
+   RESPONSIVE MEDIA QUERIES
+------------------------------ */
+/* If the screen is smaller than 600px (like a phone) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Changes nav items from side-by-side to stacked vertically */
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    main {
+        margin: 10px; /* Reduces outer margin on small screens */
+        padding: 15px;
+    }
+}
